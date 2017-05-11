@@ -8,4 +8,6 @@ alias s="pstorm ."
 alias a="atom ."
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias law="cd /Users/hamoud/Sites/law && git status"
+alias legend="cd ~/Sites/legend && git fetch && git status"
 
