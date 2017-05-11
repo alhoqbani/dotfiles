@@ -13,5 +13,8 @@
     tabLength: 4
   "exception-reporting":
     userId: "f7c28407-afee-475a-86a9-d1d09197f74f"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
