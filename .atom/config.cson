@@ -1,10 +1,24 @@
 "*":
+  "atom-material-ui":
+    colors: {}
+    fonts: {}
+    tabs:
+      compactTabs: true
+      noTabMinWidth: true
+    treeView:
+      compactList: true
+    ui:
+      panelShadows: true
   core:
     allowPendingPaneItems: false
     audioBeep: false
     closeDeletedFileTabs: true
     closeEmptyWindows: false
     telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
   editor:
     fontSize: 18
     lineHeight: 2.5
