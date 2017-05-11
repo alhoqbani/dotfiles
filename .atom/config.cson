@@ -4,16 +4,25 @@
     fonts: {}
     tabs:
       compactTabs: true
-      noTabMinWidth: true
     treeView:
       compactList: true
     ui:
+      animations: false
       panelShadows: true
+  autosave:
+    enabled: true
   core:
     allowPendingPaneItems: false
     audioBeep: false
     closeDeletedFileTabs: true
     closeEmptyWindows: false
+    disabledPackages: [
+      "about"
+      "wrap-guide"
+      "welcome"
+      "emmet"
+    ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -27,6 +36,8 @@
     tabLength: 4
   "exception-reporting":
     userId: "f7c28407-afee-475a-86a9-d1d09197f74f"
+  "spell-check":
+    addKnownWords: true
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
