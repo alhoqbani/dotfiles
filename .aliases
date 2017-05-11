@@ -1,0 +1,11 @@
+alias p="./vendor/bin/phpunit"
+alias pf="./vendor/bin/phpunit --filter"
+alias art="php artisan"
+alias b="vendor/bin/behat"
+alias dump="composer dumpautoload"
+alias nah="git reset --hard && git clean -dfi"
+alias s="pstorm ."
+alias a="atom ."
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+
