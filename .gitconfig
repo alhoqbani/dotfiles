@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Hamoud Alhoqbani
+#	email = h.alhoqbani@gmail.com
+[user]
+	name = Hamoud Alhoqbani
+	email = h.alhoqbani@gmail.com
+[core]
+	excludesfile = /Users/hamoud/.gitignore_global
