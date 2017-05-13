@@ -32,4 +32,4 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
 '.platform-darwin':
-  'cmd-e': 'fuzzy-finder:toggle-file-finder'
+  'cmd-e': 'fuzzy-finder:toggle-file-finder',
