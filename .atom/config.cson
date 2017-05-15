@@ -1,4 +1,6 @@
 "*":
+  "atom-html-preview":
+    scrollToCursor: true
   "atom-material-ui":
     colors: {}
     fonts: {}
