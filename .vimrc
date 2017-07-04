@@ -8,20 +8,11 @@ let mapleader = ',' 					    	"The default is \, but a comma is much better.
 set number							"Let's activate line numbers.
 set linespace=15
 
+
+
 "-------------Visuals--------------"
 colorscheme atom-dark-256
-
 set t_CO=256							"Use 256 colors. This is useful for Terminal Vim.
-set guifont=Fira_Code:h18					"Set the default font family and size.
-set linespace=15   					        "Macvim-specific line-height.
-
-set guioptions-=l                                               "Disable Gui scrollbars.
-set guioptions-=L
-set guioptions-=r
-set guioptions-=R
-
-
-
 
 "-------------Search--------------"
 set hlsearch								"Highlight all matched terms.
@@ -43,8 +34,6 @@ nmap <C-L> <C-W><C-L>
 
 "-------------Mappings--------------"
 
-nmap <C-r> :CtrlPBufTag<cr>
-nmap <C-e> :CtrlPMRU<cr>
 map <C-n> :NERDTreeToggle<CR>
 
 imap <C-S> <C-o>:w<cr>
@@ -64,6 +53,13 @@ nmap <Leader><space> :nohlsearch<cr>
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
+nmap <C-r> :CtrlPBufTag<cr>
+nmap <C-e> :CtrlPMRU<cr>
+
+""/
+"/ NERDTree 
+""/
+let NERDTreeHijackNetrw=0
 
 
 "-------------Auto-Commands--------------"
