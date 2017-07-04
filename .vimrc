@@ -1,21 +1,21 @@
-set nocompatible              " be iMproved, required
+set nocompatible             					 " be iMproved, required
 
 so ~/.vim/plugins.vim
 
 syntax enable
-set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
-let mapleader = ',' 						    	"The default is \, but a comma is much better.
-set number								"Let's activate line numbers.
-
+set backspace=indent,eol,start                                  "Make backspace behave like every other editor.
+let mapleader = ',' 					    	"The default is \, but a comma is much better.
+set number							"Let's activate line numbers.
+set linespace=15
 
 "-------------Visuals--------------"
 colorscheme atom-dark-256
 
-set t_CO=256								"Use 256 colors. This is useful for Terminal Vim.
-set guifont=Fira_Code:h17						"Set the default font family and size.
-set linespace=15   						        "Macvim-specific line-height.
+set t_CO=256							"Use 256 colors. This is useful for Terminal Vim.
+set guifont=Fira_Code:h18					"Set the default font family and size.
+set linespace=15   					        "Macvim-specific line-height.
 
-set guioptions-=l                                                       "Disable Gui scrollbars.
+set guioptions-=l                                               "Disable Gui scrollbars.
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
