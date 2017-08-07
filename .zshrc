@@ -88,3 +88,4 @@ source ~/.aliases
 source ~/.functions
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+eval "$(rbenv init -)"

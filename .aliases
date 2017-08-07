@@ -12,3 +12,5 @@ alias law="cd /Users/hamoud/Sites/law && git status"
 alias legend="cd ~/Sites/legend && git fetch && git status"
 
 alias phinx="./vendor/bin/phinx"
+alias synPub="rsync -avz --progress public/ aws:/var/www/html/thesaudilaw.com/public/"
+alias w="webstrom ."
