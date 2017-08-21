@@ -1,16 +1,12 @@
 alias p="./vendor/bin/phpunit"
 alias pf="./vendor/bin/phpunit --filter"
-alias art="php artisan"
-alias b="vendor/bin/behat"
-alias dump="composer dumpautoload"
-alias nah="git reset --hard && git clean -dfi"
+alias w="webstrom ."
 alias s="pstorm ."
 alias a="atom ."
+alias art="php artisan"
+alias dump="composer dumpautoload"
+alias nah="git reset --hard && git clean -dfi"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-alias law="cd /Users/hamoud/Sites/law && git status"
 alias legend="cd ~/Sites/legend && git fetch && git status"
-
-alias phinx="./vendor/bin/phinx"
 alias synPub="rsync -avz --progress public/ aws:/var/www/html/thesaudilaw.com/public/"
-alias w="webstrom ."
+alias law="cd ${HOME}/Sites/saudi-law"

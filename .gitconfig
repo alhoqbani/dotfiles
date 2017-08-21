@@ -9,3 +9,6 @@
 [core]
 	excludesfile = /Users/hamoud/.gitignore_global
 	editor = /usr/bin/vim
+	autocrlf = false
+[credential]
+	helper = osxkeychain
