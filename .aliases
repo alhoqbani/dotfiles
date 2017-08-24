@@ -1,6 +1,6 @@
 alias p="./vendor/bin/phpunit"
 alias pf="./vendor/bin/phpunit --filter"
-alias w="webstrom ."
+alias w="webstorm ."
 alias s="pstorm ."
 alias a="atom ."
 alias art="php artisan"
