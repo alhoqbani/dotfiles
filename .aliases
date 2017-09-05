@@ -8,5 +8,8 @@ alias dump="composer dumpautoload"
 alias nah="git reset --hard && git clean -dfi"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias legend="cd ~/Sites/legend && git fetch && git status"
-alias synPub="rsync -avz --progress public/ aws:/var/www/html/thesaudilaw.com/public/"
+alias synPub="rsync -avz --progress public/ aws:thesaudilaw.com/public"
 alias law="cd ${HOME}/Sites/saudi-law"
+alias getssh='cat ~/.ssh/id_rsa.pub | pbcopy'
+alias gcsmg='gcmsg'
+alias gmcsg="gcmsg"
