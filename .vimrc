@@ -1,7 +1,7 @@
 set nocompatible             					 " be iMproved, required
 
 so ~/.vim/plugins.vim
-
+set tabstop=2
 syntax enable
 set backspace=indent,eol,start                                  "Make backspace behave like every other editor.
 let mapleader = ',' 					    	"The default is \, but a comma is much better.

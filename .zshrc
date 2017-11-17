@@ -84,4 +84,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
-PATH=$HOME/.composer/vendor/bin:/usr/local/sbin:$PATH
+source ~/.env
+
+###-tns-completion-start-###
+if [ -f /Users/hamoud/.tnsrc ]; then 
+    source /Users/hamoud/.tnsrc 
+fi
+###-tns-completion-end-###

@@ -4,3 +4,9 @@ EDITOR=vim
 
 alias ll="ls -lhG"
 alias l="ls -lah"
+
+###-tns-completion-start-###
+if [ -f /Users/hamoud/.tnsrc ]; then 
+    source /Users/hamoud/.tnsrc 
+fi
+###-tns-completion-end-###
