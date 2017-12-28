@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git wp-cli)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,7 +64,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -87,7 +87,7 @@ source ~/.aliases
 source ~/.env
 
 ###-tns-completion-start-###
-if [ -f /Users/hamoud/.tnsrc ]; then 
-    source /Users/hamoud/.tnsrc 
-fi
+#if [ -f /Users/hamoud/.tnsrc ]; then 
+#    source /Users/hamoud/.tnsrc 
+#fi
 ###-tns-completion-end-###
