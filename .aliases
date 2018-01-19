@@ -15,4 +15,4 @@ alias gcsmg='gcmsg'
 alias gmcsg="gcmsg"
 alias b='vendor/bin/behat'
 alias t='terraform'
-alias rwd='cd ~/Documents/R/WorgingDirectory'
+alias rwd='cd ~/Documents/Code/R/WorkingDirectory'
