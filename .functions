@@ -1,0 +1,21 @@
+mcd () {
+    mkdir -p $1
+    cd $1
+}
+
+# Clone a remote repo with all branches and tags
+clone() {
+if [ "$#" -ne 2 ]; then
+		echo "Usage: clone <repo url> <dir>"
+		return 1
+fi
+mkdir $2 && cd $2
+git clone --bare $1 .git
+git config --bool core.bare false
+git reset --hard
+} 
+
+# most commonly used commands
+most_commands() {
+history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
+}
