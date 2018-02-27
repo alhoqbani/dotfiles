@@ -10,7 +10,7 @@ if [ "$#" -ne 2 ]; then
 		return 1
 fi
 mkdir $2 && cd $2
-git clone --bare $1 .git
+git clone --bare --recurse-submodules $1 .git
 git config --bool core.bare false
 git reset --hard
 } 
