@@ -30,3 +30,7 @@ hammerjs \
 moment'
 
 alias myIp="curl ipinfo.io/ip"
+
+
+# To disbale Chrome CORS pre-flight check
+alias unsafeChrome='open -a Google\ Chrome --args --disable-web-security --user-data-dir'
