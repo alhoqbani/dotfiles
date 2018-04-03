@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/hamoud/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,14 +86,3 @@ export EDITOR='vim'
 source ~/.aliases
 source ~/.env
 source ~/.functions
-###-tns-completion-start-###
-#if [ -f /Users/hamoud/.tnsrc ]; then 
-#    source /Users/hamoud/.tnsrc 
-#fi
-###-tns-completion-end-###
-
-###-tns-completion-start-###
-if [ -f /Users/hamoud/.tnsrc ]; then 
-    source /Users/hamoud/.tnsrc 
-fi
-###-tns-completion-end-###
