@@ -3,7 +3,7 @@
 	name = Hamoud Alhoqbani
 	email = h.alhoqbani@gmail.com
 [core]
-	excludesfile = $HOME/.gitignore_global
+	excludesfile = /Users/hamoud/.gitignore_global
 	editor = /usr/bin/vim
 	autocrlf = false
 [credential]

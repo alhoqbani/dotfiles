@@ -16,8 +16,8 @@ alias gmcsg="gcmsg"
 alias b='vendor/bin/behat'
 alias t='terraform'
 alias rwd='cd ~/Documents/Code/R/WorkingDirectory'
-
-
+alias home='cd /Volumes/MyDrive/Home'
+alias drive='cd /Volumes/MyDrive'
 
 # Install angular deps
 alias ngDeps='npm install --save \
