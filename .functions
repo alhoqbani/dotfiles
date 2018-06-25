@@ -15,7 +15,31 @@ git config --bool core.bare false
 git reset --hard
 } 
 
+# Dwonload .gitignore
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
 # most commonly used commands
 most_commands() {
 history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
+}
+
+# New Laravel Project With Vessel
+lara() {
+	laravel new $1
+	cd $1
+	composer require shipping-docker/vessel barryvdh/laravel-debugbar --dev
+	php artisan vendor:publish --provider="Vessel\VesselServiceProvider"
+	bash vessel init
+	rm .env.bak.vessel
+	sed -i '' 's/APP_URL.*/APP_URL=http:\/\/localhost:8080\
+APP_PORT=8080\
+MYSQL_PORT=33306/' .env
+	sed -i '' "s/xdebug.remote_host=.*/xdebug.remote_host=$(ipconfig getifaddr en0)/" docker/app/xdebug.ini
+#	pstorm .
+	echo 'storage/debugbar/' >> .gitignore
+	git init && git add . && git commit -m 'Initial Commit :tada:'
+	./vessel start
+	./vessel npm install && ./vessel npm run dev
+	git add public package-lock.json package.json && git commit -m 'npm install and run dev'
+	s
 }
