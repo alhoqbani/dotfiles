@@ -40,3 +40,15 @@ alias unsafeChrome='open -a Google\ Chrome --args --disable-web-security --user-
 # Symfony
 alias symf='./bin/console'
 alias ip="curl -s ipecho.net/plain;echo"
+
+
+alias syncMofradar='rsync -vzcrSLh --progress --exclude=.idea \
+--exclude=backups \
+--exclude=vendor \
+--exclude=cgi-bin \
+--exclude=.phpintel \
+--exclude=apiv2 \
+--exclude=_ide_helper.php \
+--exclude=storage/framework \
+--exclude=storage/logs \
+moofradat:public_html /Volumes/MyDrive/Home/Developer/php/moofradat/'

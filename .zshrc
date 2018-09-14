@@ -85,3 +85,4 @@ alias zshconfig="vim ~/.zshrc"
 source ~/.aliases
 source ~/.env
 source ~/.functions
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"

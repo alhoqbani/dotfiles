@@ -25,7 +25,7 @@ history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/c
 
 # New Laravel Project With Vessel
 lara() {
-	laravel new $1
+	composer create-project laravel/laravel $1
 	cd $1
 	composer require shipping-docker/vessel barryvdh/laravel-debugbar --dev
 	php artisan vendor:publish --provider="Vessel\VesselServiceProvider"
@@ -43,3 +43,19 @@ MYSQL_PORT=33306/' .env
 	git add public package-lock.json package.json && git commit -m 'npm install and run dev'
 	s
 }
+
+#composer () {
+#    tty=
+#    tty -s && tty=--tty
+#    docker run \
+#        $tty \
+#        --interactive \
+#        --rm \
+#        --user $(id -u):$(id -g) \
+#        --volume /etc/passwd:/etc/passwd:ro \
+#        --volume /etc/group:/etc/group:ro \
+#        --volume $(pwd):/app \
+#				--volume $HOME/.composer:/tmp
+#        composer "$@"
+#}
+#
