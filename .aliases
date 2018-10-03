@@ -13,6 +13,8 @@ alias synPub="rsync -vzcrSLh --progress public/ aws:thesaudilaw.com/public"
 alias law="cd ${HOME}/Sites/saudi-law"
 alias getssh='cat ~/.ssh/id_rsa.pub | pbcopy'
 
+alias initgit="git init && git add . && git commit -m 'Initial commit :tada:'"
+
 # Common typos :)
 alias gcsmg='gcmsg'
 alias gmcsg="gcmsg"
