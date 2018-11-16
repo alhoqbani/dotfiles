@@ -37,11 +37,14 @@ MYSQL_PORT=33306/' .env
 	sed -i '' "s/xdebug.remote_host=.*/xdebug.remote_host=$(ipconfig getifaddr en0)/" docker/app/xdebug.ini
 #	pstorm .
 	echo 'storage/debugbar/' >> .gitignore
-	git init && git add . && git commit -m 'Initial Commit :tada:'
 	./vessel start
+	./vessel composer require laravel/telescope
+	./vessel art telescope:install
+	./vessel art migrate
+	./vessel art vendor:publish --provider=""Laravel\Telescope\TelescopeServiceProvider
+	pstorm .
 	./vessel npm install && ./vessel npm run dev
-	git add public package-lock.json package.json && git commit -m 'npm install and run dev'
-	s
+	git init && git add . && git commit -m 'Initial Commit :tada:'
 }
 
 #composer () {
