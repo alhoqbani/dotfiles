@@ -5,7 +5,7 @@
 [core]
 	excludesfile = /Users/hamoud/.gitignore_global
 	editor = /usr/bin/vim
-	autocrlf = false
+	autocrlf = input
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
