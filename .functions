@@ -43,7 +43,7 @@ MYSQL_PORT=33306/' .env
 	./vessel art migrate
 	./vessel art vendor:publish --provider=""Laravel\Telescope\TelescopeServiceProvider
 	pstorm .
-	./vessel npm install && ./vessel npm run dev
+  npm install && npm run dev
 	git init && git add . && git commit -m 'Initial Commit :tada:'
 }
 
