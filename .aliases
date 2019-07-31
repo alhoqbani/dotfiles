@@ -2,26 +2,24 @@ alias p="./vendor/bin/phpunit"
 alias pf="./vendor/bin/phpunit --filter"
 alias w="webstorm ."
 alias s="pstorm ."
-alias a="atom ."
+alias st="studio ." 
 alias art="php artisan"
 alias ves="./vessel"
 alias dump="composer dumpautoload"
 alias nah="git reset --hard && git clean -dfi"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias legend="cd ~/Sites/legend && git fetch && git status"
 alias synPub="rsync -vzcrSLh --progress public/ aws:thesaudilaw.com/public"
-alias law="cd ${HOME}/Sites/saudi-law"
 alias getssh='cat ~/.ssh/id_rsa.pub | pbcopy'
-
 alias initgit="git init && git add . && git commit -m 'Initial commit :tada:'"
+
+alias home='cd /Volumes/MyDrive/Home'
+alias projects='cd /Volumes/MyDrive/Home/Projects'
+alias drive='cd /Volumes/MyDrive'
 
 # Common typos :)
 alias gcsmg='gcmsg'
 alias gmcsg="gcmsg"
 alias mkidr="mkdir"
-alias t='terraform'
-alias home='cd /Volumes/MyDrive/Home'
-alias drive='cd /Volumes/MyDrive'
 
 # Install angular deps
 alias ngDeps='npm install --save \
@@ -39,18 +37,4 @@ alias myIp="curl ipinfo.io/ip"
 # To disbale Chrome CORS pre-flight check
 alias unsafeChrome='open -a Google\ Chrome --args --disable-web-security --user-data-dir'
 
-# Symfony
-alias symf='./bin/console'
-alias ip="curl -s ipecho.net/plain;echo"
-
-
-alias syncMofradar='rsync -vzcrSLh --progress --exclude=.idea \
---exclude=backups \
---exclude=vendor \
---exclude=cgi-bin \
---exclude=.phpintel \
---exclude=apiv2 \
---exclude=_ide_helper.php \
---exclude=storage/framework \
---exclude=storage/logs \
-moofradat:public_html /Volumes/MyDrive/Home/Developer/php/moofradat/'
+alias ip="curl -s ipecho.net/plain | tee >(pbcopy)"
