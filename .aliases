@@ -1,10 +1,12 @@
 alias p="./vendor/bin/phpunit"
 alias t="php artisan test"
 alias pf="./vendor/bin/phpunit --filter"
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias w="webstorm ."
 alias s="pstorm ."
 alias st="studio ." 
 alias art="php artisan"
+alias artv="valet php artisan"
 alias mfs="php artisan migrate:fresh --seed"
 alias ves="./vessel"
 alias dump="composer dumpautoload"
