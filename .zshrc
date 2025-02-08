@@ -70,10 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-
-# Form node version manager:
-# https://github.com/lukechilds/zsh-nvm#as-an-oh-my-zsh-custom-plugin
-plugins=(git zsh-nvm aws)
+plugins=(git nvm aws)
 
 source $ZSH/oh-my-zsh.sh
 
